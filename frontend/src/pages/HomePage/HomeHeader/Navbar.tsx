@@ -19,7 +19,8 @@ function Navbar({ navbarScrolled }: Props) {
     }, [])
     console.log(width)
     return (
-        <div className="home-header-container">
+        <div className="home-header__container">
+            <div className="home-header-container">
             <header className={contractHeader && width <= 730 ? 'home-header extended' : 'home-header contracted'}>
                 {width <= 730 ? (
                     <>
@@ -35,7 +36,7 @@ function Navbar({ navbarScrolled }: Props) {
                             {contractHeader && (
                                 <ul className='home-nav-list'>
                                     <li><a href="/">Inicio</a></li>
-                                    <li><a href="/">Nuestra Propuesta</a></li>
+                                    <li><a href="/our_proposal">Nuestra Propuesta</a></li>
                                     <li><a href="/">En acción</a></li>
                                     <li><a href="/">Tu voto</a></li>
                                 </ul>
@@ -49,7 +50,7 @@ function Navbar({ navbarScrolled }: Props) {
                             <p className="home-logo">Partido Demócrata</p>
                             <ul className='home-nav-list'>
                                 <li><a href="/">Inicio</a></li>
-                                <li><a href="/">Nuestra Propuesta</a></li>
+                                <li><a href="/our_proposal">Nuestra Propuesta</a></li>
                                 <li><a href="/">En acción</a></li>
                                 <li><a href="/">Tu voto</a></li>
                             </ul>
@@ -57,6 +58,7 @@ function Navbar({ navbarScrolled }: Props) {
                     </>
                 )}
             </header>
+        </div>
         </div>
     )
 }

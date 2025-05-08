@@ -1,0 +1,88 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.our-proposal-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.our-proposal-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    aspect-ratio: 3/2;
+    border-radius: 0 0 5px 5px;
+}
+
+.our-proposal-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.our-proposal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #1c1c1c;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Títulos y destacados */
+  .our-proposal-content strong {
+    color: #004aad;
+    font-weight: 600;
+  }
+  
+  /* Párrafos */
+  .our-proposal-content p {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Lista de compromisos */
+  .our-proposal-content ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .our-proposal-content li {
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive: más aire en pantallas chicas */
+  @media screen and (max-width: 600px) {
+    .our-proposal-content {
+      font-size: 1rem;
+      padding: 1.5rem 1rem;
+    }
+  
+    .our-proposal-content ul {
+      padding-left: 0.5rem;
+    }
+  }
+  
+
+@media(max-width:768px){
+    .our-proposal-image{
+        aspect-ratio: 5/3;
+        height: 100%;
+    }
+}
+
