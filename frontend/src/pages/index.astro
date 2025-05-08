@@ -5,7 +5,7 @@ import HomeCountDown from "./HomePage/HomeCounter/HomeCountDown";
 import HomeFooter from "./HomePage/HomeFooter/HomeFooter";
 import HomeCouncilor from "./HomePage/HomeCouncilor/HomeCouncilor";
 import HomeAds from "./HomePage/HomeAds/HomeAds";
-import "./css/index.css"
+import "./css/index.css";
 ---
 
 <html lang="en">
@@ -14,6 +14,37 @@ import "./css/index.css"
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="title" content="Partido Demócrata Misiones" />
+		<meta name="description" content="El partido demócrata de Misiones" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://partido-democrata-misiones.vercel.app/"
+		/>
+		<meta property="og:title" content="Partido Demócrata Misiones" />
+		<meta
+			property="og:description"
+			content="El partido demócrata de Misiones"
+		/>
+		<meta property="og:image" content="/assets/PDBannerMobile.webp" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:url"
+			content="https://partido-democrata-misiones.vercel.app/"
+		/>
+		<meta property="twitter:title" content="Partido Demócrata Misiones" />
+		<meta
+			property="twitter:description"
+			content="El partido demócrata de Misiones"
+		/>
+		<meta property="twitter:image" content="/assets/PDBannerMobile.webp" />
+		<meta name="keywords" content="partido político, Misiones, democracia, elecciones, candidatos, Posadas" />
+		<link rel="canonical" href="https://partido-democrata-misiones.vercel.app/" />
+
 		<title>Partido Demócrata</title>
 	</head>
 	<body>
@@ -24,7 +55,7 @@ import "./css/index.css"
 			<HomeBanner client:load />
 			<HomeCountDown client:load />
 			<HomeAds client:load />
-			<HomeCouncilor client:load/>
+			<HomeCouncilor client:load />
 			<HomeFooter client:load />
 		</div>
 	</body>
