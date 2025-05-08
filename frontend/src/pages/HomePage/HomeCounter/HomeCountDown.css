@@ -1,0 +1,23 @@
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #4f95e1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: earthFlow 8s ease-in-out infinite;
+}
+
+.countdown-container h1, .countdown-container h2, .countdown-container p {
+    background: linear-gradient(270deg, #4f95e1, #4f95e1, #93d8ff, #93d8ff, #4f95e1);
+    background-size: 400% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: earthFlow 8s ease-in-out infinite;
+}
+
+
+.countdown-container h1 {
+    font-size: 3.5rem;
+}

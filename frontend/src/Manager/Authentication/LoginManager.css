@@ -1,0 +1,52 @@
+.login-manager-container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-manager__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+.toggle-loginmanager-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.cinnamon-title{
+    font-size: 3rem;
+    background: linear-gradient(90deg, #4f95e1, #3b6db5, #1f3f73);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.cinnamon-subtitle{
+    background: linear-gradient(90deg, #4f95e1, #3b6db5, #1f3f73);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width:680px){
+    .login-manager-container{
+        padding: 1rem;
+        
+    }
+}

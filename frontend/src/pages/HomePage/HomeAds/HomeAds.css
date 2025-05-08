@@ -1,0 +1,24 @@
+.ads-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #4f95e1, #4f95e1, #93d8ff, #93d8ff, #4f95e1);
+  background-size: 400% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: earthFlow 8s ease-in-out infinite;
+  text-align: center;
+}
+
+@keyframes earthFlow {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+@media(max-width: 768px){
+    .ads-title{
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+}

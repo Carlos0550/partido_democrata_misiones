@@ -1,0 +1,31 @@
+---
+import Navbar from "./HomePage/HomeHeader/Navbar";
+import HomeBanner from "./HomePage/HomeBanner/HomeBanner";
+import HomeCountDown from "./HomePage/HomeCounter/HomeCountDown";
+import HomeFooter from "./HomePage/HomeFooter/HomeFooter";
+import HomeCouncilor from "./HomePage/HomeCouncilor/HomeCouncilor";
+import HomeAds from "./HomePage/HomeAds/HomeAds";
+import "./css/index.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Partido Demócrata</title>
+	</head>
+	<body>
+		<div class="home-container">
+			<div class="navbar-container">
+				<Navbar client:only />
+			</div>
+			<HomeBanner client:load />
+			<HomeCountDown client:load />
+			<HomeAds client:load />
+			<HomeCouncilor client:load/>
+			<HomeFooter client:load />
+		</div>
+	</body>
+</html>
