@@ -61,10 +61,16 @@ html,body{
 }
 
 .candidate-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;    
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #1c1c1c;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
   }
   
   .candidate__content-1 {

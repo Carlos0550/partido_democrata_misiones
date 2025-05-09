@@ -8,6 +8,8 @@
   -webkit-background-clip: text;
   animation: earthFlow 8s ease-in-out infinite;
   text-align: center;
+  padding: 10px;
+
 }
 
 @keyframes earthFlow {

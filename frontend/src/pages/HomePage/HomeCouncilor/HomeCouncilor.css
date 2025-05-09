@@ -17,6 +17,12 @@
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    opacity: 0;
+    transform: translateX(-300%);
+  }
+
+  .candidate-card.animate{
+    animation: slideInLeft 0.5s ease-in-out forwards;
   }
   
   .candidate-card:hover {
@@ -54,3 +60,13 @@
     color: #2a2a2a;
   }
   
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

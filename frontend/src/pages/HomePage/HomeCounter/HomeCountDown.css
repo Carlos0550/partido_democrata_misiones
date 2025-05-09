@@ -1,4 +1,6 @@
 .countdown-container {
+    padding: 10px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -20,4 +22,10 @@
 
 .countdown-container h1 {
     font-size: 3.5rem;
+}
+
+@media(max-width: 768px){
+    .countdown-container h1 {
+        font-size: 2rem;
+    }
 }

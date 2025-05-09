@@ -23,7 +23,7 @@ function HomeCouncilor() {
     const container = containerRef.current;
     if (!container) return;
 
-    const cards = container.querySelectorAll<HTMLDivElement>(".product-card");
+    const cards = container.querySelectorAll<HTMLDivElement>(".candidate-card");
 
     const observer = new IntersectionObserver(
       (entries, obs) => {
@@ -38,7 +38,7 @@ function HomeCouncilor() {
       },
       {
         root: null,
-        threshold: 0,
+        threshold: 0.2,
       }
     );
 
