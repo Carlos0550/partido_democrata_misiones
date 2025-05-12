@@ -37,7 +37,7 @@ function Navbar({ navbarScrolled }: Props) {
                                 <ul className='home-nav-list'>
                                     <li><a href="/">Inicio</a></li>
                                     <li><a href="/our_proposal">Nuestra Propuesta</a></li>
-                                    <li><a href="/your-vote">Tu voto</a></li>
+                                    {/* <li><a href="/your-vote">Tu voto</a></li> */}
                                 </ul>
                             )}
 
@@ -50,7 +50,7 @@ function Navbar({ navbarScrolled }: Props) {
                             <ul className='home-nav-list'>
                                 <li><a href="/">Inicio</a></li>
                                 <li><a href="/our_proposal">Nuestra Propuesta</a></li>
-                                <li><a href="/your-vote">Tu voto</a></li>
+                                {/* <li><a href="/your-vote">Tu voto</a></li> */}
                             </ul>
                         </nav>
                     </>
